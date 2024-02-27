@@ -1,4 +1,4 @@
-exports.RelativePoint = class RelativePoint {
+class RelativePoint {
 	x;
 	y;
 	w;
@@ -36,9 +36,9 @@ exports.RelativePoint = class RelativePoint {
 		let ye = this.h / 2 - this.y;
 		return new CartesianPoint(xe, ye, this.w, this.h);
 	}
-};
+}
 
-exports.CartesianPoint = class CartesianPoint {
+class CartesianPoint {
 	x;
 	y;
 	w;
@@ -76,4 +76,8 @@ exports.CartesianPoint = class CartesianPoint {
 		let yr = this.h / 2 - this.y;
 		return new RelativePoint(xr, yr, this.w, this.h);
 	}
-};
+}
+
+exports.RelativePoint = RelativePoint;
+
+exports.CartesianPoint = CartesianPoint;
