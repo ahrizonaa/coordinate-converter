@@ -1,8 +1,3 @@
-# coordinate-converter
-
-Convert between relative and cartesian coordinates using `RelativePoint` and `CartesianPoint` classes.
-
-```
 const { RelativePoint, CartesianPoint } = require('coordinate-converter');
 
 let viewport = {
@@ -32,4 +27,3 @@ let bottomLeftMargin = new CartesianPoint(
 
 console.log(bottomLeftMargin, bottomLeftMargin.ToRelative());
 // CartesianPoint { x: -940, y: -520, w: 1920, h: 1080 } RelativePoint { x: 20, y: 1060, w: 1920, h: 1080 }
-```
