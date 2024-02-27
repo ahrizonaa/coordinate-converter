@@ -1,6 +1,6 @@
 {
 	"name": "coordinate-converter",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Convert between relative and cartesian coordinates in a viewport.",
 	"main": "index.js",
 	"scripts": {
